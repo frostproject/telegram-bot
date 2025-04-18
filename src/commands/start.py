@@ -20,9 +20,8 @@ async def start_base(update: Update, context: ContextTypes.DEFAULT_TYPE, query=N
     [InlineKeyboardButton(en.getTrial_button(), callback_data="TRIAL")],
     [InlineKeyboardButton(en.getBuy_button(), callback_data="BUY")],
     [InlineKeyboardButton(en.getConnect_button(), callback_data="CONNECT")],
-    [InlineKeyboardButton(en.getServer_status_button(), url="https://status.frostproject.dev/")],
     [InlineKeyboardButton(en.getSupport_button(), url="https://t.me/iceeburr")],
-    [InlineKeyboardButton(en.getChannel_button(), url="https://t.me/iceeburr")],
+    [InlineKeyboardButton(en.getChannel_button(), url="https://t.me/frostproject_news")],
   ]
   reply_markup = InlineKeyboardMarkup(keyboard)
   if query != None:
