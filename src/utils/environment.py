@@ -7,13 +7,12 @@ class config:
     load_dotenv()
 
   def getToken(self) -> str:
-    return os.getenv("TOKEN")
+    return os.getenv("TELEGRAM_TOKEN")
 
   def getRemnaAPIkey(self) -> str:
     return os.getenv("REMNAWAVE_API_KEY")
 
-  def getRemnaBaseUrl(self) -> str:
-    return os.getenv("REMNAWAVE_BASE_URL")
-
+  def getRemnaUrl(self) -> str:
+    return "https://" + os.getenv("REMNAWAVE_BASE_URL")
 
 conf = config()

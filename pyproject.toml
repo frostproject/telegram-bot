@@ -1,21 +1,22 @@
 [project]
 name = "telegram-bot"
-version = "0.1.0"
+version = "0.0.1"
 description = ""
 authors = [
-    {name = "CptRiggs",email = "122716901+CptRiggs@users.noreply.github.com"},
-    {name = "iceeburr", email = "contact@iceeburr.ru"}
+    { name = "CptRiggs", email = "122716901+CptRiggs@users.noreply.github.com" },
+    { name = "Daniel Komitski", email = "iceeburr@gmail.com" },
 ]
+license = { text = "MPL-2.0" }
+readme = "README.md"
 requires-python = ">=3.13"
 dependencies = [
     "python-telegram-bot (>=22.0,<23.0)",
     "python-dotenv (>=1.1.0,<2.0.0)",
-    "requests (>=2.32.3,<3.0.0)"
+    "requests (>=2.32.3,<3.0.0)",
 ]
 
 [tool.poetry]
-packages = [{include = "telegram_bot", from = "src"}]
-
+package-mode = false
 
 [build-system]
 requires = ["poetry-core>=2.0.0,<3.0.0"]
