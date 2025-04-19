@@ -6,7 +6,6 @@ authors = [
     {name = "CptRiggs",email = "122716901+CptRiggs@users.noreply.github.com"},
     {name = "iceeburr", email = "contact@iceeburr.ru"}
 ]
-readme = "README.md"
 requires-python = ">=3.13"
 dependencies = [
     "python-telegram-bot (>=22.0,<23.0)",
